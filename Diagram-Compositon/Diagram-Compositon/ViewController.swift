@@ -4,19 +4,31 @@ protocol FeedLoader {
     func load(completion: @escaping([String]) -> Void)
 }
 
+struct Reachanility {
+    static let networkintAvailable = false
+}
+
 final class ViewController: UIViewController {
-    private let loader: FeedLoader
     
-    init(loader: FeedLoader) {
-        self.loader = loader
+    private let remoteLoader: RemoteFeedLoader
+    private let localLoader: LocalFeedLoader
+    
+    init(remoteLoader: RemoteFeedLoader, localLoader: LocalFeedLoader) {
+        self.remoteLoader = remoteLoader
+        self.localLoader = localLoader
         super.init(nibName: nil, bundle: nil)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loader.load { loadItems in
-            // update
+        if Reachanility.networkintAvailable {
+            remoteLoader.load { remote in
+                
+            }
+        } else {
+            localLoader.load { local in
+                
+            }
         }
     }
     
