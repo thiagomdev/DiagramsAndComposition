@@ -8,14 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		AA7C4E8B2C5F1D62003B4870 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C4E8A2C5F1D62003B4870 /* AppDelegate.swift */; };
-		AA7C4E8D2C5F1D62003B4870 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C4E8C2C5F1D62003B4870 /* SceneDelegate.swift */; };
 		AA7C4E8F2C5F1D62003B4870 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C4E8E2C5F1D62003B4870 /* ViewController.swift */; };
-		AA7C4E922C5F1D62003B4870 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA7C4E912C5F1D62003B4870 /* Base */; };
 		AA7C4E942C5F1D64003B4870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7C4E932C5F1D64003B4870 /* Assets.xcassets */; };
 		AA7C4E972C5F1D64003B4870 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AA7C4E962C5F1D64003B4870 /* Base */; };
-		AA7C4EA22C5F1D64003B4870 /* Diagram_CompositonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C4EA12C5F1D64003B4870 /* Diagram_CompositonTests.swift */; };
 		AA7C4EAC2C5F1D64003B4870 /* Diagram_CompositonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C4EAB2C5F1D64003B4870 /* Diagram_CompositonUITests.swift */; };
 		AA7C4EAE2C5F1D64003B4870 /* Diagram_CompositonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C4EAD2C5F1D64003B4870 /* Diagram_CompositonUITestsLaunchTests.swift */; };
+		AA7C4EBE2C5F2748003B4870 /* RemoteWithFallbackLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C4EBD2C5F2747003B4870 /* RemoteWithFallbackLoader.swift */; };
+		AA7C4EC02C5F2768003B4870 /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C4EBF2C5F2768003B4870 /* LocalFeedLoader.swift */; };
+		AA7C4EC22C5F277F003B4870 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C4EC12C5F277E003B4870 /* RemoteFeedLoader.swift */; };
+		AA7C4ECC2C5F29D1003B4870 /* RemoteWithFallbackLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7C4ECB2C5F29D1003B4870 /* RemoteWithFallbackLoaderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +39,18 @@
 /* Begin PBXFileReference section */
 		AA7C4E872C5F1D62003B4870 /* Diagram-Compositon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diagram-Compositon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7C4E8A2C5F1D62003B4870 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA7C4E8C2C5F1D62003B4870 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AA7C4E8E2C5F1D62003B4870 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA7C4E912C5F1D62003B4870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA7C4E932C5F1D64003B4870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA7C4E962C5F1D64003B4870 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA7C4E982C5F1D64003B4870 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA7C4E9D2C5F1D64003B4870 /* Diagram-CompositonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diagram-CompositonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA7C4EA12C5F1D64003B4870 /* Diagram_CompositonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagram_CompositonTests.swift; sourceTree = "<group>"; };
 		AA7C4EA72C5F1D64003B4870 /* Diagram-CompositonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Diagram-CompositonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7C4EAB2C5F1D64003B4870 /* Diagram_CompositonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagram_CompositonUITests.swift; sourceTree = "<group>"; };
 		AA7C4EAD2C5F1D64003B4870 /* Diagram_CompositonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagram_CompositonUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AA7C4EBD2C5F2747003B4870 /* RemoteWithFallbackLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWithFallbackLoader.swift; sourceTree = "<group>"; };
+		AA7C4EBF2C5F2768003B4870 /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
+		AA7C4EC12C5F277E003B4870 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		AA7C4ECB2C5F29D1003B4870 /* RemoteWithFallbackLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWithFallbackLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,9 @@
 		AA7C4E892C5F1D62003B4870 /* Diagram-Compositon */ = {
 			isa = PBXGroup;
 			children = (
-				AA7C4E8A2C5F1D62003B4870 /* AppDelegate.swift */,
-				AA7C4E8C2C5F1D62003B4870 /* SceneDelegate.swift */,
-				AA7C4E8E2C5F1D62003B4870 /* ViewController.swift */,
-				AA7C4E902C5F1D62003B4870 /* Main.storyboard */,
-				AA7C4E932C5F1D64003B4870 /* Assets.xcassets */,
-				AA7C4E952C5F1D64003B4870 /* LaunchScreen.storyboard */,
-				AA7C4E982C5F1D64003B4870 /* Info.plist */,
+				AA7C4EC32C5F2792003B4870 /* Start */,
+				AA7C4EC42C5F27A7003B4870 /* Features */,
+				AA7C4EC72C5F2805003B4870 /* Resources */,
 			);
 			path = "Diagram-Compositon";
 			sourceTree = "<group>";
@@ -113,7 +111,7 @@
 		AA7C4EA02C5F1D64003B4870 /* Diagram-CompositonTests */ = {
 			isa = PBXGroup;
 			children = (
-				AA7C4EA12C5F1D64003B4870 /* Diagram_CompositonTests.swift */,
+				AA7C4EC92C5F2981003B4870 /* CompositionTests */,
 			);
 			path = "Diagram-CompositonTests";
 			sourceTree = "<group>";
@@ -125,6 +123,99 @@
 				AA7C4EAD2C5F1D64003B4870 /* Diagram_CompositonUITestsLaunchTests.swift */,
 			);
 			path = "Diagram-CompositonUITests";
+			sourceTree = "<group>";
+		};
+		AA7C4EBA2C5F2717003B4870 /* RemoteFeedLoader */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C4EC12C5F277E003B4870 /* RemoteFeedLoader.swift */,
+			);
+			path = RemoteFeedLoader;
+			sourceTree = "<group>";
+		};
+		AA7C4EBB2C5F2725003B4870 /* LocalFeedLoader */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C4EBF2C5F2768003B4870 /* LocalFeedLoader.swift */,
+			);
+			path = LocalFeedLoader;
+			sourceTree = "<group>";
+		};
+		AA7C4EBC2C5F2736003B4870 /* FallBackLoader */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C4EBD2C5F2747003B4870 /* RemoteWithFallbackLoader.swift */,
+			);
+			path = FallBackLoader;
+			sourceTree = "<group>";
+		};
+		AA7C4EC32C5F2792003B4870 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C4E8A2C5F1D62003B4870 /* AppDelegate.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		AA7C4EC42C5F27A7003B4870 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C4EC52C5F27BA003B4870 /* Scenes */,
+				AA7C4EC82C5F286F003B4870 /* Compositon */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AA7C4EC52C5F27BA003B4870 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C4EC62C5F27BF003B4870 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AA7C4EC62C5F27BF003B4870 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C4E8E2C5F1D62003B4870 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AA7C4EC72C5F2805003B4870 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C4E932C5F1D64003B4870 /* Assets.xcassets */,
+				AA7C4E952C5F1D64003B4870 /* LaunchScreen.storyboard */,
+				AA7C4E982C5F1D64003B4870 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA7C4EC82C5F286F003B4870 /* Compositon */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C4EBC2C5F2736003B4870 /* FallBackLoader */,
+				AA7C4EBB2C5F2725003B4870 /* LocalFeedLoader */,
+				AA7C4EBA2C5F2717003B4870 /* RemoteFeedLoader */,
+			);
+			path = Compositon;
+			sourceTree = "<group>";
+		};
+		AA7C4EC92C5F2981003B4870 /* CompositionTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C4ECA2C5F2999003B4870 /* FallBackLoader */,
+			);
+			path = CompositionTests;
+			sourceTree = "<group>";
+		};
+		AA7C4ECA2C5F2999003B4870 /* FallBackLoader */ = {
+			isa = PBXGroup;
+			children = (
+				AA7C4ECB2C5F29D1003B4870 /* RemoteWithFallbackLoaderTests.swift */,
+			);
+			path = FallBackLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +289,7 @@
 					};
 					AA7C4E9C2C5F1D64003B4870 = {
 						CreatedOnToolsVersion = 16.0;
+						LastSwiftMigration = 1600;
 						TestTargetID = AA7C4E862C5F1D62003B4870;
 					};
 					AA7C4EA62C5F1D64003B4870 = {
@@ -233,7 +325,6 @@
 			files = (
 				AA7C4E942C5F1D64003B4870 /* Assets.xcassets in Resources */,
 				AA7C4E972C5F1D64003B4870 /* Base in Resources */,
-				AA7C4E922C5F1D62003B4870 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7C4EBE2C5F2748003B4870 /* RemoteWithFallbackLoader.swift in Sources */,
 				AA7C4E8F2C5F1D62003B4870 /* ViewController.swift in Sources */,
 				AA7C4E8B2C5F1D62003B4870 /* AppDelegate.swift in Sources */,
-				AA7C4E8D2C5F1D62003B4870 /* SceneDelegate.swift in Sources */,
+				AA7C4EC22C5F277F003B4870 /* RemoteFeedLoader.swift in Sources */,
+				AA7C4EC02C5F2768003B4870 /* LocalFeedLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA7C4EA22C5F1D64003B4870 /* Diagram_CompositonTests.swift in Sources */,
+				AA7C4ECC2C5F29D1003B4870 /* RemoteWithFallbackLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +390,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA7C4E902C5F1D62003B4870 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA7C4E912C5F1D62003B4870 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AA7C4E952C5F1D64003B4870 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,10 +529,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L923PSABUA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Diagram-Compositon/Info.plist";
+				INFOPLIST_FILE = "Diagram-Compositon/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,10 +557,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L923PSABUA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Diagram-Compositon/Info.plist";
+				INFOPLIST_FILE = "Diagram-Compositon/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -495,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L923PSABUA;
@@ -504,6 +590,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thiagomonteiro.Diagram-CompositonTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diagram-Compositon.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Diagram-Compositon";
@@ -514,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L923PSABUA;
